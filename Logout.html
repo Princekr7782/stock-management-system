@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .logout-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logout-container">
+    <h2>You have successfully logged out!</h2>
+    <p>Click below to log in again:</p>
+    <button onclick="redirectToLogin()">Login</button>
+</div>     
+
+<script>
+    function redirectToLogin() {
+        window.location.href = "login.html";
+    }
+    setTimeout(() => {
+        redirectToLogin();
+    }, 5000);
+</script>
+
+</body>
+</html>

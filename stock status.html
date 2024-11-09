@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Level</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .in-stock {
+            color: green;
+            font-weight: bold;
+        }
+        .out-of-stock {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="dashboard.html" style="text-decoration: none; color: blue;">&larr; Back to Dashboard</a></p>
+    <h1>Product Stock Levels</h1>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Stock Level</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td class="in-stock">In Stock</td>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td class="out-of-stock">Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Headphones</td>
+            <td class="in-stock">In Stock</td>
+        </tr>
+        <tr>
+            <td>Smartwatch</td>
+            <td class="in-stock">In Stock</td>
+        </tr>
+        <tr>
+            <td>Camera</td>
+            <td class="out-of-stock">Out of Stock</td>
+        </tr>
+    </table>
+
+</body>
+</html>
